@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .xyz {
+            margin-bottom: 0px;
+            background-image: url('{% static "image/6262.jpg" %}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        .hero-text {
+            color: black;
+            font-weight: 800;
+            font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    {% include "blood/navbar.html" %}
+    <br>
+    <section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+        <div class="container text-center hero-text" style="scroll-margin-block-start: 100px;">
+            <p class="lead display-4">Welcome To UNISIS Blood Bank Management System</p>
+            <p class="h5">- ASTRO DEVELOPMENT -</p>
+        </div>
+    </section>
+
+    {% include "blood/footer.html" %}
+</body>
+
+</html>
